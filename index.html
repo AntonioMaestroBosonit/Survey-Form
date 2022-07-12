@@ -1,59 +1,73 @@
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header id='header'>
-      <h1 id='title'>Maquetación de formulario</h1>
-        <p id='description'>Gracias por probar mi formulario de FreeCodeCamp</p>
-    </header>
-    <form id='survey-form'>
-      <div class="div-form">
-        <label id="name-label" for="name"><span>*</span>&nbspNombre:</label>
-        <input type='text' name='name' id='name' class='input-form' placeholder='Introduce tu nombre' required>
-      </div>
-      <div class="div-form">
-        <label id="email-label" for="email"><span>*</span>&nbspEmail:</label>
-        <input type='email' name='email' id='email' class='input-form' placeholder='Introduce tu email' required>
-      </div>
-      <div class="div-form">
-        <label id="number-label" for="number">Edad:</label>
-        <input type='number' name='age' id='number' class='input-form' placeholder='Introduce tu edad' min='18' max='125'>
-      </div>
-      <div class="div-form">
-        <label id="sector-label" for="dropdown"><span>*</span>&nbspSector empresarial:</label>
-        <select id="dropdown" name="job" class="input-form" required>
-          <option disabled selected value="" >Selecciona tu sector</option>
-          <option value="it">IT</option>
-          <option value="health">Salud</option>
-          <option value="financial">Economía</option>
-          <option value="industrial">Industrial</option>
-          <option value="other">Otros</option>
-          </select>
-        </div>
-        <div class="div-form">
-        <p>¿Estás contento en ese sector?</p>
-        <label><input name="status" value="happy" type="radio" class="input-radio" id="happy" checked>&nbspSi</label>
-        <label><input name="status" value="sad" type="radio" class="input-radio" id="sad">&nbspNo</label>
-        <label><input name="status" value="undefined" type="radio" class="input-radio" id="undefined">&nbspMe es indiferente</label>
-      </div>
-      <div class="div-form">
-        <p>¿Qué cambiarías de tu trabajo?</p>
-        <label><input name="changes" value="salary" type="checkbox" class="input-checkbox" id="salary">&nbspMejor salario</label>
-        <label><input name="changes" value="schedule" type="checkbox" class="input-checkbox" id="schedule">&nbspMejor horario</label>
-        <label><input name="changes" value="site" type="checkbox" class="input-checkbox" id="site">&nbspLugar de trabajo</label>
-        <label><input name="changes" value="remote" type="checkbox" class="input-checkbox" id="remote">&nbspPosibilidad de teletrabajo</label>
-      </div>
-      <div class="div-form">
-        <p>¿Tienes alguna sugerencia?</p>
-        <textarea id="suggestion" class="input-form input-textarea" name="suggestion" rows="4" placeholder="Introduce tus sugerencias"></textarea>
-      </div>
-      <div class="div-form">
-        <button type="submit" id="submit" class="submit-button input-form">Enviar</button>
-      </div class="div-form">
-        <p id="required"><span>* Requerido<span></p>
-      <div>
-      </div>
+</head>
+
+<body>
+    <div class="container">
+        <header id='header'>
+            <h1 id='title'>Maquetación de formulario</h1>
+            <p id='description'>Gracias por probar mi formulario de FreeCodeCamp</p>
+        </header>
+        <form id='survey-form'>
+            <div class="div-form">
+                <label id="name-label" for="name"><span>*</span>&nbspNombre:</label>
+                <input type='text' name='name' id='name' class='input-form' placeholder='Introduce tu nombre' required>
+            </div>
+            <div class="div-form">
+                <label id="email-label" for="email"><span>*</span>&nbspEmail:</label>
+                <input type='email' name='email' id='email' class='input-form' placeholder='Introduce tu email'
+                    required>
+            </div>
+            <div class="div-form">
+                <label id="number-label" for="number">Edad:</label>
+                <input type='number' name='age' id='number' class='input-form' placeholder='Introduce tu edad' min='18'
+                    max='125'>
+            </div>
+            <div class="div-form">
+                <label id="sector-label" for="dropdown"><span>*</span>&nbspSector empresarial:</label>
+                <select id="dropdown" name="job" class="input-form" required>
+                    <option disabled selected value="">Selecciona tu sector</option>
+                    <option value="it">IT</option>
+                    <option value="health">Salud</option>
+                    <option value="financial">Economía</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+            <div class="div-form">
+                <p>¿Estás contento en ese sector?</p>
+                <label><input name="status" value="happy" type="radio" class="input-radio" id="happy"
+                        checked>&nbspSi</label>
+                <label><input name="status" value="sad" type="radio" class="input-radio" id="sad">&nbspNo</label>
+                <label><input name="status" value="undefined" type="radio" class="input-radio" id="undefined">&nbspMe es
+                    indiferente</label>
+            </div>
+            <div class="div-form">
+                <p>¿Qué cambiarías de tu trabajo?</p>
+                <label><input name="changes" value="salary" type="checkbox" class="input-checkbox"
+                        id="salary">&nbspMejor salario</label>
+                <label><input name="changes" value="schedule" type="checkbox" class="input-checkbox"
+                        id="schedule">&nbspMejor horario</label>
+                <label><input name="changes" value="site" type="checkbox" class="input-checkbox" id="site">&nbspLugar de
+                    trabajo</label>
+                <label><input name="changes" value="remote" type="checkbox" class="input-checkbox"
+                        id="remote">&nbspPosibilidad de teletrabajo</label>
+            </div>
+            <div class="div-form">
+                <p>¿Tienes alguna sugerencia?</p>
+                <textarea id="suggestion" class="input-form input-textarea" name="suggestion" rows="4"
+                    placeholder="Introduce tus sugerencias"></textarea>
+            </div>
+            <div class="div-form">
+                <button type="submit" id="submit" class="submit-button input-form">Enviar</button>
+            </div class="div-form">
+            <div class="div-form">
+                <p id="required"><span>* Requerido<span></p>
+            </div>
+    </div>
     </form>
-  </body>
+</body>
+
 </html>
